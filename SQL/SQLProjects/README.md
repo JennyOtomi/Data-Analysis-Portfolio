@@ -34,12 +34,12 @@ where person_id in (14887, 16371)
 select * from get_fit_now_check_in where 	
 membership_id in (select id from get_fit_now_member where membership_status = 'gold' and id like '%48Z%')
 
-I got two people that matched the description that was given as shown in the screenshot below, so I went further to check the driver's license  table for the car that has the description given by the first witness and I got 2 males and 1 female.
+# I got two people that matched the description that was given as shown in the screenshot below, so I went further to check the driver's license  table for the car that has the description given by the first witness and I got 2 males and 1 female.
  
 select * from drivers_license 
 where plate_number like '%H42W%'
 
-The witnesses said a man committed the murder so that ruled out the female from the result above, leaving us with 2 males.
+# The witnesses said a man committed the murder so that ruled out the female from the result above, leaving us with 2 males.
  
 
 # Step 5. 
@@ -56,11 +56,13 @@ and person.id in (select person_id from get_fit_now_member
 		  where membership_status = 'gold' and id like '%48Z%')
 and (t.membership_status = 'gold' and t.id like '%48Z%')
 
-and I got only one person which was "Jeremy Bowers, with driver's license - 423327, person id - 67318
+# and I got only one person which was "Jeremy Bowers, with driver's license - 423327, person id - 67318
  
 
-However, on the day of the murder there was a facebook event which he attended. I found that out by running the query below
+# However, on the day of the murder there was a facebook event which he attended. I found that out by running the query below
 select * from facebook_event_checkin where person_id  = 67318
  
-CONCLUSION
-The killer is 67318.The murderer was Jeremy Bower
+# CONCLUSION
+# The killer is 67318. The murderer was Jeremy Bower
+
+# Kindly check the word document in this folder to see screenshots of the records returned by each query.

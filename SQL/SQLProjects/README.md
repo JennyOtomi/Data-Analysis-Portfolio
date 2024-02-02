@@ -6,7 +6,7 @@ it. You vaguely remember that the crime was a murder that occurred sometime on J
 
 # Below are the steps involved in solving and identifying the murderer.
 
-# tep 1
+# Step 1
 # Ran a query from crime scene table to get the witnesses.
 select * from crime_scene_report 
 where type = 'murder' 

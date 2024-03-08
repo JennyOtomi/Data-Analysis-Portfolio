@@ -1,6 +1,6 @@
 use chinook;
 
--- Q1 Album Titles in Ascending order --
+-- Q1 Album Titles in Descending order --
 select * 
 from Album 
 order by Title desc;

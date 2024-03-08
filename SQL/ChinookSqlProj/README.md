@@ -1,6 +1,6 @@
 # This project is to solve the following questions using MySql
 
-# ▪ Write a query to show the album titles in ascending order.
+# ▪ Write a query to show the album titles in descending order.
 # ▪ How many artists name start with B?
 # ▪ What’s the customers name whose city is Oslo?
 # ▪ How many customers do we have from Canada?
@@ -14,7 +14,7 @@ First and foremost, I ran the scripts to create the the database, tables and to 
 #
 # use chinook;
 
- -- Q1 Album Titles in Ascending order --
+ -- Q1 Album Titles in descending order --
 # select * 
 # from Album 
 # order by Title desc;

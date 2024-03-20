@@ -20,3 +20,8 @@ This dataset captures sales transactions from a local restaurant in India. It in
 •	Investigating the performance of staff members based on gender.
 •	Exploring the popularity of items at different times of the day.
 
+# Details of Each File
+The file named BalajiFastFoodSales.csv is the raw file as downloaded from kaggle.
+The file named BalajiAnalysisReport.docx is the file containing the detialed analysis report.
+The image file named Dashboard.png 
+The modified_restaurant file contains the cleaned and formatted sheet, the various pivots and charts created and the dashboard
